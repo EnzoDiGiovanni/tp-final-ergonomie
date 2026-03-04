@@ -1,11 +1,19 @@
-<script setup></script>
+<script setup>
+import Footer from "./components/Footer.vue";
+import Header from "./components/Header.vue";
+import HeroSection from "./components/HeroSection.vue";
+import ContentSections from "./components/ContentSections.vue";
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-</template>
+  <div id="app">
+    <Header />
 
-<style scoped></style>
+    <main id="main-content">
+      <HeroSection />
+      <ContentSections />
+    </main>
+
+    <Footer />
+  </div>
+</template>
